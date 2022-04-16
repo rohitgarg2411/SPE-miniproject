@@ -1,12 +1,12 @@
 package org.iiitb;
 import java.lang.Math;
 import java.util.Scanner;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 public class Calculator {
-    //private static final //logger //logger = LogManager.get//logger(Calculator.class);
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
     public static void main(String[] args) {
 
         int flag = 1;
@@ -59,19 +59,19 @@ public class Calculator {
     }
 
     public static double sqRoot(double number){
-        //logger.info("Applying square root function on number : " + number);
+        logger.info("Applying square root function on number : " + number);
         double out = Math.sqrt(number);
-        //logger.info("Result of square root function on " + number + " is: " + out);
+        logger.info("Result of square root function on " + number + " is: " + out);
         return out;
     }
 
     public static int factorial(int number){
-        //logger.info("Applying factorial function on number : " + number);
+        logger.info("Applying factorial function on number : " + number);
         int out = 1;
         for(int i=number; i>0; i--){
             out *=i;
         }
-        //logger.info("Result of factorial function on " + number + " is: " + out);
+        logger.info("Result of factorial function on " + number + " is: " + out);
         return out;
     }
 
@@ -83,9 +83,9 @@ public class Calculator {
     }
 
     public static double power(double operandX, double operandY){
-        //logger.info("Applying power function on : " + operandX + ", " + operandY);
+        logger.info("Applying power function on : " + operandX + ", " + operandY);
         double out = Math.pow(operandX, operandY);
-        //logger.info("Result of power function on : " + operandX + ", " + operandY + " is: " + out);
+        logger.info("Result of power function on : " + operandX + ", " + operandY + " is: " + out);
         return out;
     }
 }
