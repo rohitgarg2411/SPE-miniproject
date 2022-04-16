@@ -7,31 +7,36 @@ import org.apache.logging.log4j.Logger;
 
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
+
     public static void main(String[] args) {
 
         int flag = 1;
         Scanner in = new Scanner(System.in);
         do{
-            System.out.println("Please enter the number corresponding to the operation that you want to execute: ");
-            System.out.println("1. Square Root");
-            System.out.println("2. Factorial");
+            System.out.println(" Enter which scientific operation you want to perform: ");
+            System.out.println("1.Factorial");
+    
+            System.out.println("2.Square root");
             System.out.println("3. Natural Logarithm");
             System.out.println("4. Power Function");
             System.out.println("5. Exit");
 
             int choice = in.nextInt();
+
             switch(choice){
                 case 1: {
-                    System.out.println("Input the number");
-                    double number = in.nextDouble();
-                    System.out.println("The Square root of " + number + " is " + sqRoot(number));
-                    break;
-                }
-                case 2: {
-                    System.out.println("Input the number");
+                    System.out.println("Type the number");
                     int number = in.nextInt();
                     System.out.println("The Factorial of " + number + " is " + factorial(number));
                     break;
+                }
+                
+                case 2: {
+                    System.out.println("Type the number");
+                    double number = in.nextDouble();
+                    System.out.println("Square root of given no." + number + " is " + sqRoot(number));
+                    break;
+                 
                 }
                 case 3: {
                     System.out.println("Input the number");

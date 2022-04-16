@@ -14,3 +14,15 @@
 16/Apr/2022:16:31:38 074 [Calculator.java] [INFO] org.iiitb.Calculator Result of factorial function on 4 is: 24
 16/Apr/2022:16:32:18 986 [Calculator.java] [INFO] org.iiitb.Calculator Applying power function on : 3.0, 3.0
 16/Apr/2022:16:32:19 006 [Calculator.java] [INFO] org.iiitb.Calculator Result of power function on : 3.0, 3.0 is: 27.0
+16/Apr/2022:18:08:27 990 [Calculator.java] [INFO] org.iiitb.Calculator Applying square root function on number : 16.0
+16/Apr/2022:18:08:28 002 [Calculator.java] [INFO] org.iiitb.Calculator Result of square root function on 16.0 is: 4.0
+16/Apr/2022:18:08:28 004 [Calculator.java] [INFO] org.iiitb.Calculator Applying factorial function on number : 5
+16/Apr/2022:18:08:28 008 [Calculator.java] [INFO] org.iiitb.Calculator Result of factorial function on 5 is: 120
+16/Apr/2022:18:08:28 009 [Calculator.java] [INFO] org.iiitb.Calculator Applying square root function on number : 4.0
+16/Apr/2022:18:08:28 010 [Calculator.java] [INFO] org.iiitb.Calculator Result of square root function on 4.0 is: 2.0
+16/Apr/2022:18:08:28 011 [Calculator.java] [INFO] org.iiitb.Calculator Applying power function on : 5.5, 3.0
+16/Apr/2022:18:08:28 021 [Calculator.java] [INFO] org.iiitb.Calculator Result of power function on : 5.5, 3.0 is: 166.375
+16/Apr/2022:18:08:28 022 [Calculator.java] [INFO] org.iiitb.Calculator Applying factorial function on number : 5
+16/Apr/2022:18:08:28 022 [Calculator.java] [INFO] org.iiitb.Calculator Result of factorial function on 5 is: 120
+16/Apr/2022:18:08:28 024 [Calculator.java] [INFO] org.iiitb.Calculator Applying power function on : 4.0, 3.0
+16/Apr/2022:18:08:28 024 [Calculator.java] [INFO] org.iiitb.Calculator Result of power function on : 4.0, 3.0 is: 64.0
