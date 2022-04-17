@@ -27,7 +27,7 @@ public class Calculator {
                 case 1: {
                     System.out.println("Type the number");
                     int number = in.nextInt();
-                    System.out.println("Square root is" + squareRoot(number));
+                    System.out.println("Square root is " + squareRoot(number));
                     break;
                 }
                 
@@ -49,7 +49,7 @@ public class Calculator {
                     int base = in.nextInt();
                     System.out.println("Type  exponent value");
                     int exponent = in.nextInt();
-                    System.out.println("The value of is" + Power(base, exponent));
+                    System.out.println("The value of is " + Power(base, exponent));
                     break;
                 }
                 case 5: {
