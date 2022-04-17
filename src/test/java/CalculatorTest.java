@@ -3,68 +3,83 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
-    private Calculator myCalculator;
+
+    private Calculator myCalc;
 
     @Before
-    public void setUp(){
-        myCalculator = new Calculator();
+    public void setting_up(){
+        myCalc = new Calculator();
+    }
+    //writing the testcases
+    @Test
+    public void correct_sq_root(){
+        int number = 25;
+        double actual = 5;
+        assertEquals("Calculating square root for correct case",myCalc.squareRoot(number), actual, 0.2f);
     }
 
     @Test
-    public void truePositiveSqRoot(){
-        double number = 4;
-        double actual = 2;
-        assertEquals("Finding square root for True Positive",myCalculator.sqRoot(number), actual, 0.2f);
+    public void wrong_sq_root(){
+        int number = 25;
+        double actual = 7;
+        assertNotEquals("Calculating square root for wrong case",myCalc.squareRoot(number), actual, 0.2f);
     }
 
     @Test
-    public void trueNegativeSqRoot(){
-        double number = 16;
-        double actual = 8;
-        assertNotEquals("Finding square root for True Negative",myCalculator.sqRoot(number), actual, 0.2f);
+    public void correct_Factorial(){
+        int number = 4;
+        int actual = 24;
+        assertEquals("Calculating Factorial for correct case",myCalc.fact(number), actual, 0.2f);
     }
 
     @Test
-    public void truePositiveFactorial(){
-        int number = 5;
-        int actual = 120;
-        assertEquals("Finding Factorial for True Positive",myCalculator.factorial(number), actual, 0.2f);
+    public void wrong_Factorial(){
+        int number = 7;
+        int actual = 800;
+        assertNotEquals("Calculating Factorial for wrong case",myCalc.fact(number), actual, 0.2f);
     }
 
     @Test
-    public void trueNegativeFactorial(){
-        int number = 5;
-        int actual = 720;
-        assertNotEquals("Finding Factorial for True Negative",myCalculator.factorial(number), actual, 0.2f);
-    }
-
-    @Test
-    public void truePositiveNaturalLog(){
+    public void correct_NaturalLog(){
         double number = 2.71;
         double actual = 0.99694;
-        assertEquals("Finding Natural Log for True Positive",myCalculator.naturalLog(number), actual, 0.2f);
+        assertEquals("Calculating Natural Log for correct case",myCalc.natLog(number), actual, 0.2f);
     }
 
     @Test
-    public void trueNegativeNaturalLog(){
-        double number = 1;
-        double actual = 2;
-        assertNotEquals("Finding Natural Log for True Negative",myCalculator.naturalLog(number), actual, 0.2f);
+    public void wrong_NaturalLog(){
+        double number = 10;
+        double actual = 3;
+        assertNotEquals("Calculating Natural Log for wrong case",myCalc.natLog(number), actual, 0.2f);
     }
 
     @Test
-    public void truePositivePower(){
-        double base = 5.5;
-        double exponent = 3;
-        double actual = 166.375;
-        assertEquals("Finding Power for True Positive",myCalculator.power(base, exponent), actual, 0.2f);
+    public void correct_Power(){
+        int base = 3;
+        int exponent = 2;
+        double actual = 9;
+        assertEquals("Calculating Power for correct case",myCalc.Power(base, exponent), actual, 0.2f);
+    }
+    @Test
+    public void correct_Power1(){
+        int base = 4;
+        int exponent = 2;
+        double actual = 16;
+        assertEquals("Calculating Power for correct case",myCalc.Power(base, exponent), actual, 0.2f);
+    }
+    @Test
+    public void correct_Power2(){
+        int base = 7;
+        int exponent = 2;
+        double actual = 49;
+        assertEquals("Calculating Power for correct case",myCalc.Power(base, exponent), actual, 0.2f);
     }
 
     @Test
-    public void trueNegativePower(){
-        double base = 4;
-        double exponent = 3;
-        double actual = 125;
-        assertNotEquals("Finding Power for True Negative",myCalculator.power(base, exponent), actual, 0.2f);
+    public void wrong_Power(){
+        int base = 2;
+        int exponent = 4;
+        double actual = 64;
+        assertNotEquals("Calculating Power for wrong case",myCalc.Power(base, exponent), actual, 0.2f);
     }
 }
